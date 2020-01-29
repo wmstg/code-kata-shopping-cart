@@ -1,8 +1,8 @@
 # CODE-KATA-Shopping-Cart
 
 ## Workflow
-- Treat this like a real assignment, but only spend an hour or two on it - it doesn't matter how far you get
-- Add your own `README` if necessary
+- Treat this like a real assignment, but only spend up to two hours on it - it doesn't matter how far you get
+- Include a `README`
 
 ## Instructions
 You should implement a supermarket checkout which:
