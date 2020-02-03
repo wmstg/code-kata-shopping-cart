@@ -19,5 +19,5 @@ Use the following pricing information:
 | D     | 10    | N/A       |
 
 For example:
-- `'DABA'` gives `135`
+- `'DABA'` gives `140`
 - `'BBBB'` gives `74`
