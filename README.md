@@ -2,7 +2,11 @@
 
 ## Workflow
 - Treat this like a real assignment, but only spend up to two hours on it - it doesn't matter how far you get
+- Fork the project to your personal Github account (click on the fork button in the top right corner)
+- Clone the forked version of this repository
 - Include a `README`
+- Push your work up to your fork
+- Submit a link to your forked repository
 
 ## Instructions
 You should implement a supermarket checkout which:
