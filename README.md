@@ -26,8 +26,6 @@ For example:
 - `'DABA'` gives `140`
 - `'BBBB'` gives `74`
 
-####
 
-A simple solution to the shopping cart task.
 
-Uncommenting the while loop in the main method will allow continued running of the program until the key Q is pressed when you are prompted to continue or quit.
+See Readme.txt
