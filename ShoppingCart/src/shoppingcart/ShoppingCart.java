@@ -8,7 +8,6 @@ import java.util.Scanner;
  */
 public class ShoppingCart {
     static final Products products = new Products();
-    static Boolean quit = false;
     int total = 0;
 
     /**
@@ -18,46 +17,17 @@ public class ShoppingCart {
         
         ShoppingCart sCart = new ShoppingCart();
         
-        // 1. Uncomment below to loop the shopping cart. See 2.
-        //while (!quit){
-            
-            // Displays the welcome message
-            sCart.displayWelcome();
+        // Obtain the user input
+        Scanner userInput = new Scanner(System.in);
+        String inputStr = userInput.nextLine();
 
-            // Displays the products available
-            products.displayProducts();
+        // Add to cart
+        sCart.calculateTotal(inputStr);
 
-            // Obtain the user input
-            Scanner userInput = new Scanner(System.in);
-            String order = userInput.nextLine();
-
-            // Add to cart
-            sCart.calculateTotal(order);
-
-            // Display the total
-            sCart.displayTotal();
-
-            // 2. Uncomment below to loop the shopping cart. See 1.
-            /*System.out.println("Do you want to start again? Type Q to quit any other key to continue");
-            if (((String) userInput.nextLine()).equals("Q")){
-                quit = true;
-            }
-            sCart.total = 0;
-        }*/
-        
+        // Display the total
+        sCart.displayTotal();
     }
-    
-    /*
-    Displays a welcome message
-    */
-    protected void displayWelcome(){
-        String message =
-                "*******************************************\n"
-                + "Welcome to the Supermarket Shopping Cart\n"
-                + "*******************************************\n\n";
-        System.out.print(message);
-    }
-    
+      
     /**
      * Calculates the total of the items
      * 
@@ -107,7 +77,6 @@ public class ShoppingCart {
      * Displays the total order price
      */
     private void displayTotal(){
-        System.out.print("The total order price is: " + total);
-        System.out.print("\n\n");
+        System.out.println(total);
     }
 }
